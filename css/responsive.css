@@ -1,0 +1,84 @@
+@media(max-width:990px) {
+html {
+    font-size: 55.%;
+}
+header {
+    padding: 2rem;
+}
+
+section {
+    padding: 2rem ;
+}
+
+}
+
+/* >>>>>>>>>>>>>>>>> 768px */
+@media(max-width:768px) {
+#menu-bar {
+    display: initial ;
+}
+
+header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #f7f7f7;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0) ;
+}
+
+header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    display: block;
+    border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    border-left: 0.5rem solid var(--red);
+    background: #fff;
+}
+/*  >>>>>>>>>>>>> 430px*/
+}
+@media(max-width:450px) {
+html {
+    font-size: 50%;
+}
+.order .row form .inputBox input {
+    width: 100%;
+}
+
+.footer p  {
+    font-size: 1.2rem;
+}
+
+.home .content p {
+    font-size: 1.3rem;
+}
+
+.home .content h3 {
+    font-size: 2.5rem;
+}
+.heading {
+    font-size: 2.5rem;
+}
+
+.speciality .box-container .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.speciality .box-container .box .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.speciality .box-container .box:hover .content {
+    transform: translateY(100%);
+}
+    
+}
+
